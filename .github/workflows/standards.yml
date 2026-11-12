@@ -8,4 +8,4 @@ permissions:
   contents: read
 jobs:
   standards:
-    uses: inbetweenlabs/.github/.github/workflows/repo-standards.yml@8a2e9edb271f88aa4ec2b1738972abcf0940856e # set by /sync-repos
+    uses: inbetweenlabs/.github/.github/workflows/repo-standards.yml@eaf1bc62738ddb61ace64a41b1fea254e1eff8fd # main 2026-11-12
