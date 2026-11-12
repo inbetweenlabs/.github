@@ -1,0 +1,11 @@
+# Inbetween Labs repo standard (org rule 13): runs the central verifier at a pinned SHA.
+name: standards
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  standards:
+    uses: inbetweenlabs/.github/.github/workflows/repo-standards.yml@0000000000000000000000000000000000000000 # set by /sync-repos
