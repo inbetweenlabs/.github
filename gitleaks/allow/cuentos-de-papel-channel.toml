@@ -1,0 +1,9 @@
+# Brand kit records written by tools/brand.py: each .brand-version maps a brand file path to its sha256.
+# Older records list assets/brand/tokens.css, and the word "token" next to a 64-hex hash trips
+# generic-api-key. Only exact 64-hex values in episode .brand-version files are allowed.
+[[allowlists]]
+description = "Brand kit records: sha256 hashes of brand files in generated .brand-version files"
+condition = "AND"
+paths = ['''^episodes/[^/]+/[a-z]+/\.brand-version$''']
+regexes = ['''^[0-9a-f]{64}$''']
+targetRules = ["generic-api-key"]
